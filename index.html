@@ -1,0 +1,463 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home - MovieSubtitle</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="assets/libs/font-awesome/font-awesome.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<style>
+:root{
+ --theme-color: #654AE9;
+ --theme-text-color: #000000;
+ --theme-background-color: #FFFFFF;
+ 
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+body, html{
+height: 100%;
+font-family: "Poppins", sans-serif;
+background: var(--theme-background-color);
+color: var(--theme-text-color);
+max-width: 100%;
+width: 100%;
+overflow-x: hidden;
+}
+
+.container{
+width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  display: block;
+}
+
+.row{
+display: flex;
+flex-direction: row;
+flex-flow: wrap;
+margin-left: -15px !important;
+margin-right: -15px !important;
+}
+
+a{
+text-decoration: none;
+font-size: 0.9em;
+}
+
+li{
+list-style-type: none;
+}
+
+.col-3{
+   -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+ }
+
+.col-6{
+-ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+ 
+ .header{
+height: 70px !important;
+padding: 12px 0 !important;
+ }
+
+.logo{
+width: 268px !important;
+height: 47px !important;
+}
+ 
+  .film-image{
+width: 170px !important;
+height: 240px !important;
+}
+  
+	.col-lg-2 {
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+ 
+ .col-lg-3{
+   -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+ }
+ 
+ .col-lg-4{
+ -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+ }
+ 
+ .col-lg-6{
+ -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+ }
+ 
+ .col-lg-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.col-lg-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-lg-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.col-lg-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
+  }
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.circle-5{
+border-radius: 5px;
+}
+
+.circle-10{
+border-radius: 10px;
+}
+
+.my-1{
+margin: 4px 0;
+}
+
+.my-2{
+margin: 7px 0;
+}
+
+.d-flex{
+display: flex;
+}
+
+.flex-wrap{
+flex-wrap: wrap;
+}
+
+.flex-column{
+flex-direction: column;
+}
+
+.justify-content-center{
+justify-content: center;
+}
+
+.justify-content-between{
+justify-content: space-between;
+}
+
+.align-items-center{
+align-items: center;
+}
+
+.max-line-2 { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+
+.mr-1{
+margin-right: 6px;
+}
+
+.mb-3{
+margin-bottom: 19px;
+}
+
+.mb-2{
+margin-bottom: 13px;
+}
+
+.mb-1{
+margin-bottom: 7px;
+}
+
+.mt-1{
+margin-top: 7px;
+}
+
+.p-2{
+padding: 6px 6px;
+}
+
+.p-3{
+padding: 12px 12px;
+}
+
+.text-right{
+text-align: right;
+}
+
+
+.header{
+height: 55px;
+width: 100%;
+box-shadow: 0.1px 0.2px 3px #9F9F9F;
+padding: 8px 0;
+}
+
+.logo{
+width: 220px;
+height: 37px;
+}
+
+.text-theme{
+color: var(--theme-color);
+}
+
+.text-sm{
+font-size: 0.8em;
+}
+
+.text-white{
+color: #FFFFFF;
+}
+
+.bg-dark{
+background-color: #272727;
+}
+
+.film-image{
+width: 100%;
+height: 230px;
+}
+
+.film-name{
+margin: 5px 0;
+}
+
+.film-detail{
+font-size: 0.7em;
+}
+
+.btn{
+border: 0;
+outline:0;
+padding: 6px 7px;
+border-radius: 3px;
+background: none;
+}
+
+.btn-light{
+background-color: #FFFFFF !important;
+color: #000000 !important;
+}
+
+.popular-film-btn a{
+position: absolute;
+bottom: 8px;
+right: 6px;
+}
+
+</style>
+</head>
+<body>
+
+<!--HEADER-->
+<header class="header">
+<div class="container">
+<div class="d-flex justify-content-between align-items-center">
+
+<img src="assets/images/logo.png" class="logo"/>
+
+<i class="fa fa-search"></i>
+</div>
+</div>
+</header>
+<!--HEADER-->
+
+
+<div class="container my-2">
+<div class="row">
+<div class="col-lg-6 mb-2">
+<div class="card card-behavior">
+<div class="card-header">
+<h4>YENİ ÇIKANLAR</h4>
+<div class="card-title mb-2 mt-1">
+<div class="d-flex justify-content-between align-items-center text-theme">
+<h5>Film</h5>
+<h5>Dizi</h5>
+<h5>Anime</h5>
+<h5>Son Yüklenenler</h5>
+</div>
+</div>
+
+<div class="card-body">
+<div class="row">
+<div class="col-6 col-lg-4 mb-3">
+<img src="assets/images/star-trek-picard.jpg" class="film-image"/>
+<h5 class="film-name">Star Trek: Picard</h5>
+<div class="film-detail">
+<ul>
+<li>2020 / TV Dizisi</li>
+<b>Yönetmen:</b>
+<li><small>Hanelle M. Culpepper</small></li>
+</ul>
+</div>
+</div>
+
+<div class="col-6 col-lg-4 mb-3">
+<img src="assets/images/x.jpg" class="film-image"/>
+<h5 class="film-name">X</h5>
+<div class="film-detail">
+<ul>
+<li>2020 / TV Dizisi</li>
+<b>Yönetmen:</b>
+<li><small>Hanelle M. Culpepper</small></li>
+</ul>
+</div>
+</div>
+
+<div class="col-6 col-lg-4 mb-3">
+<img src="assets/images/roar.jpg" class="film-image"/>
+<h5 class="film-name">Roar</h5>
+<div class="film-detail">
+<ul>
+<li>2020 / TV Dizisi</li>
+<b>Yönetmen:</b>
+<li><small>Hanelle M. Culpepper</small></li>
+</ul>
+</div>
+</div>
+
+<!-- COL-6 -->
+<div class="col-6 mb-3">
+<img src="assets/images/los-herederos-de-la-tierra.jpg" class="film-image"/>
+<h5 class="film-name">Los herederos de la tierra</h5>
+<div class="film-detail">
+<ul>
+<li>2020 / TV Dizisi</li>
+<b>Yönetmen:</b>
+<li><small>Hanelle M. Culpepper</small></li>
+</ul>
+</div>
+</div>
+<!-- COL-6 END -->
+
+</div>
+<div class="text-right">
+<a href="#" class="text-theme"><i class="fa fa-arrow-right"></i> Listenin Devamına Git</a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-lg-6">
+<div class="card">
+<div class="card-header mb-2">
+<h4>POPÜLER OLANLAR</h4>
+</div>
+
+<div class="card-body bg-dark text-white d-flex">
+<!-- COL-6 -->
+<div class="col-6 p-3">
+<img src="assets/images/the-contractor.jpg" class="film-image"/>
+<h5 class="film-name">The Contractor</h5>
+<div class="film-detail">
+<ul>
+<li>2020 / TV Dizisi</li>
+<b>Yönetmen:</b>
+<li><small>Hanelle M. Culpepper</small></li>
+</ul>
+</div>
+</div>
+<!-- COL-6 END -->
+	
+<!-- COL-6 -->
+<div class="col-6 p-2">
+<p class="text-sm">Genç bir adam olan James Reed, istemese de Amerikan Deniz Birlikleri’nden ayrılmak zorunda kalır. Bu durumun ardından ailesine yardımcı olmak için, ona çok da uzak olmayan mesleğine geri döner. Yarı askeri bir organizasyona katılan James...</p>
+<div class="popular-film-btn text-right my-2">
+<a href="#" class="btn btn-light">Devamı</a>
+</div>
+</div>
+<!-- COL-6 END -->
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+<div class="card my-2">
+<div class="card-header">
+<h4>GÖZDE ÇEVİRMENLER</h4>
+</div>
+
+<div class="card-body">
+<ul>
+<li>Raku</li>
+<li>Bloodflower</li>
+<li>Travmatika</li>
+<li>Edajihoon</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+
+<script>
+
+</script>
+</body>
+</html>
